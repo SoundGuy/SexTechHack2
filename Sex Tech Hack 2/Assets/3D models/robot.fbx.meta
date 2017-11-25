@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 6dd7bc7c17d4ed947bf197cb3ead2713
+timeCreated: 1511643830
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body
+    100004: body_MeshPart0
+    100006: body_MeshPart1
+    100008: body_MeshPart2
+    100010: body_MeshPart3
+    100012: Bone.001_L
+    100014: Bone.001_R
+    100016: Camera
+    100018: foot.l
+    100020: foot.r
+    100022: hand.l
+    100024: hand.r
+    100026: head
+    100028: head_end
+    100030: hips
+    100032: index1.l
+    100034: index1.r
+    100036: index2.l
+    100038: index2.r
+    100040: index3.l
+    100042: index3.l_end
+    100044: index3.r
+    100046: index3.r_end
+    100048: Lamp
+    100050: Lamp.001
+    100052: Lamp.002
+    100054: Lamp.003
+    100056: lower_arm.l
+    100058: lower_arm.r
+    100060: lower_leg.l
+    100062: lower_leg.r
+    100064: middle1.l
+    100066: middle1.r
+    100068: middle2.l
+    100070: middle2.r
+    100072: middle3.l
+    100074: middle3.l_end
+    100076: middle3.r
+    100078: middle3.r_end
+    100080: neck
+    100082: pinky1.l
+    100084: pinky1.r
+    100086: pinky2.l
+    100088: pinky2.r
+    100090: pinky3.l
+    100092: pinky3.l_end
+    100094: pinky3.r
+    100096: pinky3.r_end
+    100098: ring1.l
+    100100: ring1.r
+    100102: ring2.l
+    100104: ring2.r
+    100106: ring3.l
+    100108: ring3.l_end
+    100110: ring3.r
+    100112: ring3.r_end
+    100114: //RootNode
+    100116: spine_lower
+    100118: spine_upper
+    100120: thumb1.l
+    100122: thumb1.r
+    100124: thumb2.l
+    100126: thumb2.r
+    100128: thumb3.l
+    100130: thumb3.l_end
+    100132: thumb3.r
+    100134: thumb3.r_end
+    100136: toe.l
+    100138: toe.l_end
+    100140: toe.r
+    100142: toe.r_end
+    100144: upper_arm.l
+    100146: upper_arm.r
+    100148: upper_leg.l
+    100150: upper_leg.r
+    400000: Armature
+    400002: body
+    400004: body_MeshPart0
+    400006: body_MeshPart1
+    400008: body_MeshPart2
+    400010: body_MeshPart3
+    400012: Bone.001_L
+    400014: Bone.001_R
+    400016: Camera
+    400018: foot.l
+    400020: foot.r
+    400022: hand.l
+    400024: hand.r
+    400026: head
+    400028: head_end
+    400030: hips
+    400032: index1.l
+    400034: index1.r
+    400036: index2.l
+    400038: index2.r
+    400040: index3.l
+    400042: index3.l_end
+    400044: index3.r
+    400046: index3.r_end
+    400048: Lamp
+    400050: Lamp.001
+    400052: Lamp.002
+    400054: Lamp.003
+    400056: lower_arm.l
+    400058: lower_arm.r
+    400060: lower_leg.l
+    400062: lower_leg.r
+    400064: middle1.l
+    400066: middle1.r
+    400068: middle2.l
+    400070: middle2.r
+    400072: middle3.l
+    400074: middle3.l_end
+    400076: middle3.r
+    400078: middle3.r_end
+    400080: neck
+    400082: pinky1.l
+    400084: pinky1.r
+    400086: pinky2.l
+    400088: pinky2.r
+    400090: pinky3.l
+    400092: pinky3.l_end
+    400094: pinky3.r
+    400096: pinky3.r_end
+    400098: ring1.l
+    400100: ring1.r
+    400102: ring2.l
+    400104: ring2.r
+    400106: ring3.l
+    400108: ring3.l_end
+    400110: ring3.r
+    400112: ring3.r_end
+    400114: //RootNode
+    400116: spine_lower
+    400118: spine_upper
+    400120: thumb1.l
+    400122: thumb1.r
+    400124: thumb2.l
+    400126: thumb2.r
+    400128: thumb3.l
+    400130: thumb3.l_end
+    400132: thumb3.r
+    400134: thumb3.r_end
+    400136: toe.l
+    400138: toe.l_end
+    400140: toe.r
+    400142: toe.r_end
+    400144: upper_arm.l
+    400146: upper_arm.r
+    400148: upper_leg.l
+    400150: upper_leg.r
+    2000000: Camera
+    4300000: body_MeshPart0
+    4300002: body_MeshPart1
+    4300004: body_MeshPart2
+    4300006: body_MeshPart3
+    9500000: //RootNode
+    10800000: Lamp
+    10800002: Lamp.001
+    10800004: Lamp.002
+    10800006: Lamp.003
+    13700000: body_MeshPart0
+    13700002: body_MeshPart1
+    13700004: body_MeshPart2
+    13700006: body_MeshPart3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: guts
+    second: {fileID: 2100000, guid: c83be34a1fc2cf34494c130b82f0847f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hydraulics
+    second: {fileID: 2100000, guid: 0aa0435faf53c3b49a346e073d50d9f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: joints
+    second: {fileID: 2100000, guid: 7f8b65df29158804cbe7ce25bde4330e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: limbs
+    second: {fileID: 2100000, guid: 44e74897b7f9f6e4eab4a276bd717e91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: spine_throat_hoses
+    second: {fileID: 2100000, guid: 81fb5caddd3234d4594fe77004980607, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: teeth_eyes
+    second: {fileID: 2100000, guid: e8dd5098e1f9af74fa62c870829d34f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: torso
+    second: {fileID: 2100000, guid: 855af882287ecf444861caf35a494f91, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
