@@ -1,12 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sex Tech Hack 2", "Sex Tech Hack 2.csproj", "{03919CEB-7169-0984-EE28-A54C44F34904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sex Tech Hack 2.Editor", "Sex Tech Hack 2.Editor.csproj", "{106EBD5A-EE1E-E278-6D8C-CBF912F13102}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03919CEB-7169-0984-EE28-A54C44F34904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03919CEB-7169-0984-EE28-A54C44F34904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03919CEB-7169-0984-EE28-A54C44F34904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03919CEB-7169-0984-EE28-A54C44F34904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106EBD5A-EE1E-E278-6D8C-CBF912F13102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106EBD5A-EE1E-E278-6D8C-CBF912F13102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106EBD5A-EE1E-E278-6D8C-CBF912F13102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106EBD5A-EE1E-E278-6D8C-CBF912F13102}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
