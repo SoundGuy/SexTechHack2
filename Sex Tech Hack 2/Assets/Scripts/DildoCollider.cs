@@ -1,0 +1,25 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+
+public class DildoCollider : MonoBehaviour {
+
+    public HandJob handjob;
+    public HandJob.direction myDirection;
+    int dildoNumber;
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+    void OnTriggerEnter(Collider other)
+    {
+        handjob.colliding(myDirection,dildoNumber);
+    }
+}
