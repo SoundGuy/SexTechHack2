@@ -34,6 +34,8 @@ public class EroticZone : MonoBehaviour {
     {
 
         //choose sound
+        MouthSoundPlayers.chooseNext();
+
         Mouth.Play();
     }
 }
