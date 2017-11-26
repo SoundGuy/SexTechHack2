@@ -7,17 +7,20 @@ public class Dildo : MonoBehaviour {
     public GameObject tip;
     public GameObject come;
     float destroyTime;
-    public float fuseLength = 2000f;
+    public float fuseLength = 3f;
     // Use this for initialization
     void Start () {
-		
-	}
+        destroyTime = 0f;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.time - destroyTime > fuseLength)
+        Debug.Log("Destroy Time = " + destroyTime +  "curen" + Time.time);
+
+        if (destroyTime != 0f && Time.time - destroyTime > fuseLength)
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
 	}
 
@@ -25,5 +28,6 @@ public class Dildo : MonoBehaviour {
     {
         come.active= true;
         destroyTime = Time.time;
+        Debug.Log("Destroy Time = " + destroyTime );
     }
 }
