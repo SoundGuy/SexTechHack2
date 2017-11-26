@@ -28,6 +28,7 @@ public class HandJob : MonoBehaviour {
 
 
     public TextMesh scoreText;
+    public TextMesh recordTimeText;
 
     // Use this for initialization
     void Start() {
@@ -70,5 +71,9 @@ public class HandJob : MonoBehaviour {
         scoreText.text = score.ToString();
         dildos[dildoNUmber].Come();
 
+        if (score >= dildos.Length)
+        {
+            recordTimeText.text = "Time : " + Time.time;
+        }
     }
 }

@@ -7,7 +7,7 @@ public class DildoCollider : MonoBehaviour {
 
     public HandJob handjob;
     public HandJob.direction myDirection;
-    int dildoNumber;
+    public  int dildoNumber;
 	// Use this for initialization
 	void Start () {
 		

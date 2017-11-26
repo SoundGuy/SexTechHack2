@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -506,6 +506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 4
 --- !u!65 &41586723
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -668,6 +669,91 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 55223852}
   m_Mesh: {fileID: 4300020, guid: d9eb76febfec15e479a2a9b846632c26, type: 3}
+--- !u!1 &55868605
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 55868608}
+  - component: {fileID: 55868607}
+  - component: {fileID: 55868606}
+  m_Layer: 0
+  m_Name: Record Time
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!102 &55868606
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55868605}
+  m_Text: 0
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!23 &55868607
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55868605}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!4 &55868608
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 55868605}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.498, y: 1.64, z: 0.247}
+  m_LocalScale: {x: 0.07544, y: 0.07544, z: 0.07544}
+  m_Children: []
+  m_Father: {fileID: 1246694982}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &85148586
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +797,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 3
 --- !u!65 &85148589
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1073,7 +1160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 394733415}
   come: {fileID: 2080547382}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &131317402
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1397,6 +1484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 7
 --- !u!65 &209243379
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1977,6 +2065,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 7
 --- !u!65 &258611861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2543,6 +2632,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 1
 --- !u!65 &316172812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2867,6 +2957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 0
 --- !u!65 &378797184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3040,6 +3131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 5
 --- !u!65 &394733418
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7313,7 +7405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 1629909383}
   come: {fileID: 953382370}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &477824955
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7484,6 +7576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 1
 --- !u!65 &511986367
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7816,8 +7909,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.2, z: 0.2}
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &565135838
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 565135835}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &571153379
 GameObject:
   m_ObjectHideFlags: 0
@@ -12098,6 +12206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 8
 --- !u!65 &689518278
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13053,6 +13162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 8
 --- !u!65 &794164600
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16666,7 +16776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 1941933260}
   come: {fileID: 1789172169}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &822828200
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17129,6 +17239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 4
 --- !u!65 &867780785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17485,6 +17596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 2
 --- !u!65 &887683586
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17807,6 +17919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 2
 --- !u!65 &898688446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22114,6 +22227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 9
 --- !u!65 &966543866
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22561,7 +22675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 887683583}
   come: {fileID: 813710680}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &989985476
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23039,7 +23153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 209243376}
   come: {fileID: 1953933026}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &1066713806
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23095,6 +23209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 5
 --- !u!65 &1097383636
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23390,7 +23505,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1138288281}
   m_LocalRotation: {x: -0.9897138, y: 0.018593313, z: -0.10708525, w: 0.09302575}
-  m_LocalPosition: {x: -0.8, y: 1.51, z: -0.3}
+  m_LocalPosition: {x: -0.774, y: 1.532, z: -0.41500002}
   m_LocalScale: {x: -0.022950018, y: -0.022950029, z: -0.02295001}
   m_Children:
   - {fileID: 1305025435}
@@ -23414,7 +23529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 1139775815}
   come: {fileID: 1172802933}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &1138288284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23471,6 +23586,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 3
 --- !u!65 &1139775818
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27425,7 +27541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 1892941443}
   come: {fileID: 1947770446}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!1 &1208934809
 GameObject:
   m_ObjectHideFlags: 0
@@ -28005,6 +28121,7 @@ Transform:
   - {fileID: 1066713804}
   - {fileID: 1877144223}
   - {fileID: 477824953}
+  - {fileID: 55868608}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28022,12 +28139,31 @@ MonoBehaviour:
   score: 0
   targetStrokes: 10
   dildos:
-  - {fileID: 0}
-  currentDirections: 02000000
-  currentStrokes: 00000000
+  - {fileID: 1207698558}
+  - {fileID: 1334388881}
+  - {fileID: 989985475}
+  - {fileID: 1138288283}
+  - {fileID: 1427792526}
+  - {fileID: 131317401}
+  - {fileID: 822828199}
+  - {fileID: 1066713805}
+  - {fileID: 1877144224}
+  - {fileID: 477824954}
+  currentDirections: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  currentStrokes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   strokeTexts:
   - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
+  - {fileID: 1368792830}
   scoreText: {fileID: 888114657}
+  recordTimeText: {fileID: 55868606}
 --- !u!1 &1260467912
 GameObject:
   m_ObjectHideFlags: 0
@@ -28511,7 +28647,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334388879}
   m_LocalRotation: {x: -0.91177624, y: -0.08688816, z: 0.39958066, w: 0.03807821}
-  m_LocalPosition: {x: 0.45, y: 1.49, z: -0.25}
+  m_LocalPosition: {x: 0.006, y: 1.428, z: -0.219}
   m_LocalScale: {x: -0.022950018, y: -0.022950029, z: -0.02295001}
   m_Children:
   - {fileID: 379771087}
@@ -28535,7 +28671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 316172809}
   come: {fileID: 641420285}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &1334388882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29408,7 +29544,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1427792524}
   m_LocalRotation: {x: -0.9002828, y: 0.0479913, z: -0.42484277, w: 0.08183114}
-  m_LocalPosition: {x: -1.138, y: 1.389, z: -0.281}
+  m_LocalPosition: {x: -1.112, y: 1.411, z: -0.396}
   m_LocalScale: {x: -0.022950018, y: -0.022950029, z: -0.02295001}
   m_Children:
   - {fileID: 1713689112}
@@ -29432,7 +29568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 41586720}
   come: {fileID: 407351993}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &1427792527
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31449,6 +31585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 9
 --- !u!65 &1629909386
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36574,6 +36711,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 6
 --- !u!65 &1824504711
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40444,7 +40582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 689518275}
   come: {fileID: 1838918159}
-  fuseLength: 2000
+  fuseLength: 1
 --- !u!65 &1877144225
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40576,6 +40714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 0
 --- !u!65 &1892941446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40932,6 +41071,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 6
 --- !u!65 &1941933263
 BoxCollider:
   m_ObjectHideFlags: 0
