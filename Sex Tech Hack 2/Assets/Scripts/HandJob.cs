@@ -20,7 +20,7 @@ public class HandJob : MonoBehaviour {
     } ;
 
 
-    public GameObject[] dildos;
+    public Dildo[] dildos;
     public  direction[] currentDirections;
     public  int[] currentStrokes;
 
@@ -67,7 +67,7 @@ public class HandJob : MonoBehaviour {
     {
         score++;
         scoreText.text = score.ToString();
-        Destroy(dildos[dildoNUmber]);
+        dildos[dildoNUmber].Come();
 
     }
 }
