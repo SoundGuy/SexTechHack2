@@ -906,6 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 1
+  dildoNumber: 0
 --- !u!65 &378797184
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2530,7 +2531,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &896982654
 Transform:
   m_ObjectHideFlags: 0
@@ -3749,6 +3750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tip: {fileID: 1892941443}
   come: {fileID: 1947770446}
+  fuseLength: 3
 --- !u!1 &1208934809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4192,6 +4194,7 @@ MonoBehaviour:
   strokeTexts:
   - {fileID: 1368792830}
   scoreText: {fileID: 888114657}
+  recordTimeText: {fileID: 0}
 --- !u!1 &1266422956
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,6 +6766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   handjob: {fileID: 1246694983}
   myDirection: 2
+  dildoNumber: 0
 --- !u!65 &1892941446
 BoxCollider:
   m_ObjectHideFlags: 0
