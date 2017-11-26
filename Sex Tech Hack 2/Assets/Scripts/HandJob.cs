@@ -65,6 +65,7 @@ public class HandJob : MonoBehaviour {
 
     void winDildo(int dildoNUmber)
     {
+        currentStrokes[dildoNUmber] = -99999;
         score++;
         scoreText.text = score.ToString();
         dildos[dildoNUmber].Come();
