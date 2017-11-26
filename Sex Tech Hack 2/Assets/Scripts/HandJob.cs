@@ -48,7 +48,8 @@ public class HandJob : MonoBehaviour {
 		
 	}
 
-    public void colliding(direction dildoDir,int dildoNUmber) {
+    public void colliding(direction dildoDir, int dildoNUmber) {
+        Debug.Log("colliing " + dildoNUmber + " dir =" + dildoDir);
         if (currentDirections[dildoNUmber] != dildoDir)
         {
             currentDirections[dildoNUmber] = dildoDir;

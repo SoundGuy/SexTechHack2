@@ -15,8 +15,15 @@ public class DildoCollider : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+    }
+
+
+
+    void OnCollisionEnter(Collision collision)
+    {
+        handjob.colliding(myDirection, dildoNumber);
+    }
 
     void OnTriggerEnter(Collider other)
     {
