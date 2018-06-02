@@ -13,6 +13,17 @@ public class OvrAvatarAssetTexture : OvrAvatarAsset {
         TextureFormat format;
         IntPtr textureData = textureAssetData.textureData;
         int textureDataSize = (int)textureAssetData.textureDataSize;
+
+        AvatarLogger.Log(
+            "OvrAvatarAssetTexture - " 
+            + _assetId 
+            + ": " 
+            + textureAssetData.format.ToString()
+            + " "  
+            + textureAssetData.sizeX
+            + "x"
+            + textureAssetData.sizeY);
+
         switch (textureAssetData.format)
         {
             case ovrAvatarTextureFormat.RGB24:
@@ -28,6 +39,9 @@ public class OvrAvatarAssetTexture : OvrAvatarAsset {
                 format = TextureFormat.ASTC_RGB_6x6;
                 textureData = new IntPtr(textureData.ToInt64() + ASTCHeaderSize);
                 textureDataSize -= ASTCHeaderSize;
+                break;
+            case ovrAvatarTextureFormat.ASTC_RGB_6x6_MIPMAPS:
+                format = TextureFormat.ASTC_RGB_6x6;
                 break;
             default:
                 throw new NotImplementedException(

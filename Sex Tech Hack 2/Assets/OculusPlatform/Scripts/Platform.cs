@@ -562,7 +562,9 @@ namespace Oculus.Platform
   public static partial class Achievements
   {
     /// Add 'count' to the achievement with the given name. This must be a COUNT
-    /// achievement.
+    /// achievement. The largest number that is supported by this method is the max
+    /// value of a signed 64-bit integer. If the number is larger than that, it is
+    /// clamped to that max value before being passed to the servers.
     ///
     public static Request<Models.AchievementUpdate> AddCount(string name, ulong count)
     {
@@ -686,9 +688,7 @@ namespace Oculus.Platform
 
   public static partial class AssetFile
   {
-    /// Removes an previously installed asset file from the device by its ID.
-    /// Returns an object containing the asset file ID and a success flag.
-    /// \param assetFileID The asset file ID
+    /// DEPRECATED. Alias to DeleteById()
     ///
     public static Request<Models.AssetFileDeleteResult> Delete(UInt64 assetFileID)
     {
@@ -700,10 +700,37 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Downloads an asset file by its ID on demand. Returns an object containing
-    /// filepath on the file system. Sends periodic
-    /// MessageType.Notification_AssetFile_DownloadUpdate to track the downloads.
+    /// Removes an previously installed asset file from the device by its ID.
+    /// Returns an object containing the asset ID and file name, and a success
+    /// flag.
     /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDeleteResult> DeleteById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDeleteResult>(CAPI.ovr_AssetFile_DeleteById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Removes an previously installed asset file from the device by its name.
+    /// Returns an object containing the asset ID and file name, and a success
+    /// flag.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDeleteResult> DeleteByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDeleteResult>(CAPI.ovr_AssetFile_DeleteByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to DownloadById()
     ///
     public static Request<Models.AssetFileDownloadResult> Download(UInt64 assetFileID)
     {
@@ -715,15 +742,126 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Cancels a previously spawned download request for an asset file by its ID.
-    /// Returns an object containing asset file ID, and the success flag.
+    /// Downloads an asset file by its ID on demand. Returns an object containing
+    /// the asset ID and filepath. Sends periodic
+    /// MessageType.Notification_AssetFile_DownloadUpdate to track the downloads.
     /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDownloadResult> DownloadById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadResult>(CAPI.ovr_AssetFile_DownloadById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Downloads an asset file by its name on demand. Returns an object containing
+    /// the asset ID and filepath. Sends periodic
+    /// {notifications.asset_file.download_update}} to track the downloads.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDownloadResult> DownloadByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadResult>(CAPI.ovr_AssetFile_DownloadByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to DownloadCancelById()
     ///
     public static Request<Models.AssetFileDownloadCancelResult> DownloadCancel(UInt64 assetFileID)
     {
       if (Core.IsInitialized())
       {
         return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancel(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Cancels a previously spawned download request for an asset file by its ID.
+    /// Returns an object containing the asset ID and file path, and a success
+    /// flag.
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetFileDownloadCancelResult> DownloadCancelById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancelById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Cancels a previously spawned download request for an asset file by its
+    /// name. Returns an object containing the asset ID and file path, and a
+    /// success flag.
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetFileDownloadCancelResult> DownloadCancelByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetFileDownloadCancelResult>(CAPI.ovr_AssetFile_DownloadCancelByName(assetFileName));
+      }
+
+      return null;
+    }
+
+    /// Returns an array of objects with asset file names and their associated IDs,
+    /// and and whether it's currently installed.
+    ///
+    public static Request<Models.AssetDetailsList> GetList()
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetailsList>(CAPI.ovr_AssetFile_GetList());
+      }
+
+      return null;
+    }
+
+    /// DEPRECATED. Alias to StatusById()
+    ///
+    public static Request<Models.AssetDetails> Status(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_Status(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Returns the details on a single asset: ID, file name, and whether it's
+    /// currently installed
+    /// \param assetFileID The asset file ID
+    ///
+    public static Request<Models.AssetDetails> StatusById(UInt64 assetFileID)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_StatusById(assetFileID));
+      }
+
+      return null;
+    }
+
+    /// Returns the details on a single asset: ID, file name, and whether it's
+    /// currently installed
+    /// \param assetFileName The asset file name
+    ///
+    public static Request<Models.AssetDetails> StatusByName(string assetFileName)
+    {
+      if (Core.IsInitialized())
+      {
+        return new Request<Models.AssetDetails>(CAPI.ovr_AssetFile_StatusByName(assetFileName));
       }
 
       return null;
@@ -1157,8 +1295,8 @@ namespace Oculus.Platform
     /// method. But, if you do not wish to automatically enqueue the room, you can
     /// call CreateRoom2 instead.
     ///
-    /// Visit https://developer2.oculus.com/application/[YOUR_APP_ID]/matchmaking
-    /// to set up pools and queries
+    /// Visit https://dashboard.oculus.com/application/[YOUR_APP_ID]/matchmaking to
+    /// set up pools and queries
     /// \param pool The matchmaking pool to use, which is defined for the app.
     /// \param matchmakingOptions Additional matchmaking configuration for this request. Optional.
     ///
@@ -1197,8 +1335,8 @@ namespace Oculus.Platform
     /// creation, you can call EnqueueRoom. Consider using CreateAndEnqueueRoom
     /// instead.
     ///
-    /// Visit https://developer2.oculus.com/application/[YOUR_APP_ID]/matchmaking
-    /// to set up pools and queries
+    /// Visit https://dashboard.oculus.com/application/[YOUR_APP_ID]/matchmaking to
+    /// set up pools and queries
     /// \param pool The matchmaking pool to use, which is defined for the app.
     /// \param matchmakingOptions Additional matchmaking configuration for this request. Optional.
     ///
@@ -1853,9 +1991,9 @@ namespace Oculus.Platform
       return null;
     }
 
-    /// Launch the profile of the given user on Gear VR. The profile surfaces
-    /// information about the user and supports relevant actions that the viewer
-    /// may take on that user, e.g. sending a friend request.
+    /// Launch the profile of the given user. The profile surfaces information
+    /// about the user and supports relevant actions that the viewer may take on
+    /// that user, e.g. sending a friend request.
     /// \param userID User ID for profile being viewed
     ///
     public static Request LaunchProfile(UInt64 userID)

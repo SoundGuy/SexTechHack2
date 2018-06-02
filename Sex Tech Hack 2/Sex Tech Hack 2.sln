@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sex Tech Hack 2", "Sex Tech Hack 2.csproj", "{03919CEB-7169-0984-EE28-A54C44F34904}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sex Tech Hack 2.Editor", "Sex Tech Hack 2.Editor.csproj", "{106EBD5A-EE1E-E278-6D8C-CBF912F13102}"
